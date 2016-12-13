@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<ScrollView
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center|left"
+	        android:orientation="vertical" >
+	
+			 <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+				
+				
+				<TextView
+	                android:id="@+id/txt_set_exam_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="請輸入考題名稱:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+				<EditText
+	                android:id="@+id/edit_exam_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" >
+	            </EditText>
+			</LinearLayout>
+			
+			
+			<TextView
+	                android:id="@+id/txt_set_ques_type"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="請選擇題型:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			<RadioGroup
+	                android:id="@+id/radiogroup_settype"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+	                
+	                <RadioButton
+						android:id="@+id/rb_ques_choose"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="選擇題" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_ques_truefalse"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="是非題" />                        
+	            </RadioGroup>
+	        
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_input_ques"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="題目:  "
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_input_ques"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" >
+	
+	                <requestFocus />
+	            </EditText>
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_chooseA"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項A:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_chooseA"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_chooseB"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項B:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_chooseB"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_chooseC"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項C:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_chooseC"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_chooseD"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項D:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_chooseD"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_point"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="配分:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_point"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	
+	            <TextView
+	                android:id="@+id/txt_setans"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選擇答案:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <RadioGroup
+	                android:id="@+id/radiogroup_setans"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+	                
+	                <RadioButton
+						android:id="@+id/rb_chooseA"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="A" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_chooseB"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="B" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_chooseC"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="C" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_chooseD"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="D" />
+	                
+	                
+	            </RadioGroup>
+	            
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            >
+	
+	            <Button
+	                android:id="@+id/btn_nextques"
+	                android:layout_width="wrap_content"
+	                android:layout_height="50dp"
+	                android:background="@drawable/half_space_btn"
+	                android:layout_weight="0.3"
+	                android:textColor="#FFFFFF"
+       		 		android:textSize="18sp"
+	                android:text="下一題" />
+	
+	            <Button
+	                android:id="@+id/btn_saveall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="50dp"
+	                android:background="@drawable/half_space_btn"
+	                android:layout_weight="0.1"
+       				android:textColor="#FFFFFF"
+        			android:textSize="18sp"
+	                android:text="結束並送出" />
+	            
+	            <Button
+	                android:id="@+id/btn_cancel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="50dp"
+	                android:background="@drawable/half_space_btn"
+	                android:layout_weight="0.4"
+       				android:textColor="#FFFFFF"
+        			android:textSize="18sp"
+	                android:text="取消" />
+	
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

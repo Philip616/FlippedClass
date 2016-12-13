@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEDD">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/public_btn"
+        android:layout_marginLeft="18dp"
+        android:text="公共"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/group_btn"
+        android:layout_below="@+id/group_btn"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="17dp"
+        android:text="分組"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/group_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/group_discuss_btn" />
+
+    <Button
+        android:id="@+id/public_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/group_btn"
+        android:layout_alignBottom="@+id/group_btn"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/group_btn"
+        android:background="@drawable/public_discuss_btn" />
+
+</RelativeLayout>

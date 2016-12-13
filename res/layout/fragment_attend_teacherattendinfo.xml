@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEEDD" >
+
+    <Spinner
+        android:id="@+id/spinner_attend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/cb_attend_teacherinfo_only" />
+
+    <ProgressBar
+        android:id="@+id/pgb_attend_teacherattendinfo"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <GridView
+        android:id="@+id/gv_attend_teacherinfotitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_attend"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3" >
+    </GridView>
+    <GridView
+        android:id="@+id/gv_attend_teacherinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3" 
+    	android:layout_below="@+id/gv_attend_teacherinfotitle">
+    </GridView>
+
+    <CheckBox
+        android:id="@+id/cb_attend_teacherinfo_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner_attend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="只顯示未出席" />
+
+</RelativeLayout>

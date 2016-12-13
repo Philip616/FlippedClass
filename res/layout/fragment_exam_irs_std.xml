@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEDD" >
+    
+     <RadioGroup
+	                android:id="@+id/radiogroup_irs_ans"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_centerInParent="true">
+	                
+	                <RadioButton
+						android:id="@+id/rb_irs_chooseA"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="A" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_irs_chooseB"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="B" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_irs_chooseC"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="C" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_irs_chooseD"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="D" />
+	                
+	                
+	            </RadioGroup>
+
+     <Button
+         android:id="@+id/btn_irs_sent"
+         android:layout_width="wrap_content"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/space_btn"
+         android:text="傳 送 答 案"
+         android:textColor="#FFFFFF"
+         android:textSize="24sp" />
+
+</RelativeLayout>

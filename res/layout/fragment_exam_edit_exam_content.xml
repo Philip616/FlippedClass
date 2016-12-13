@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center|left"
+	        android:orientation="vertical" >
+	
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_ques"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="題目:  "
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_ques"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" >
+	
+	                <requestFocus />
+	            </EditText>
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_chooseA"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項A:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_chooseA"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_chooseB"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項B:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_chooseB"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_chooseC"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項C:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_chooseC"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_chooseD"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選項D:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_chooseD"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/txt_edit_point"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="配分:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	            <EditText
+	                android:id="@+id/edit_edit_point"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:ems="10" />
+	
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	
+	            <TextView
+	                android:id="@+id/txt_edit_ans"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="選擇答案:"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <RadioGroup
+	                android:id="@+id/radiogroup_edit_ans"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+	                
+	                <RadioButton
+						android:id="@+id/rb_edit_chooseA"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="A" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_edit_chooseB"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="B" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_edit_chooseC"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="C" />
+	                
+	                <RadioButton
+						android:id="@+id/rb_edit_chooseD"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="D" />
+	                
+	                
+	            </RadioGroup>
+	            
+	
+	        </LinearLayout>
+	
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

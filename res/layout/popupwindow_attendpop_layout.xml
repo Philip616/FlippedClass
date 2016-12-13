@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corner_round_layout"
+    android:padding="@dimen/abc_action_bar_subtitle_text_size" >
+
+    <ProgressBar
+        android:id="@+id/pgb_attendpop_timerbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_attendpop_cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btn_attendpop_check"
+        android:layout_toLeftOf="@+id/btn_attendpop_check" >
+
+        <TextView
+            android:id="@+id/tv_attendpop_cooldowntime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Large Text"
+            android:textColorLink="@android:color/black" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_attendpop_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pgb_attendpop_timerbar"
+        android:layout_below="@+id/pgb_attendpop_timerbar"
+        android:layout_marginTop="22dp"
+        android:text="簽到" />
+
+    <Button
+        android:id="@+id/btn_attendpop_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_attendpop_check"
+        android:layout_below="@+id/btn_attendpop_check"
+        android:text="取消" />
+
+</RelativeLayout>

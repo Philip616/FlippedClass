@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEDD" >
+    
+    <Button
+        android:id="@+id/btn_irs_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/space_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="詳 細 答 題 情 況" />
+    
+    <LinearLayout
+        android:id="@+id/linearlayout_irs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_irs_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/btn_irs_start"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/half_space_btn"
+       		android:textColor="#FFFFFF"
+        	android:textSize="24sp"
+            android:text="開始" />
+
+        <Button
+            android:id="@+id/btn_irs_end"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/half_space_btn"
+       		android:textColor="#FFFFFF"
+        	android:textSize="24sp"
+            android:layout_weight="0.5"
+            android:text="結束" />
+
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/frame_exam_irs_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayout_irs"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+	</FrameLayout>
+
+</RelativeLayout>

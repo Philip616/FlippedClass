@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_sort_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="分組" />
+
+    <RadioGroup
+        android:id="@+id/rg_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="隨機亂數" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第二種" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第三種" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_courseID"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rg_sort"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="組員人數" />
+
+    <SeekBar
+        android:id="@+id/seekb_sort_memcount"
+        android:layout_width="108dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_sort"
+        android:layout_toLeftOf="@+id/tv_sort_memcount"
+        android:layout_toRightOf="@+id/tv_courseID"
+        android:max="5"
+        android:maxHeight="6dip"
+        android:minHeight="6dip"
+        android:progress="2" />
+
+    <TextView
+        android:id="@+id/tv_sort_memcount"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekb_sort_memcount"
+        android:gravity="center"
+        android:text="組員人數" />
+
+    <Switch
+        android:id="@+id/switch_sort_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_courseID"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekb_sort_memcount"
+        android:text="進階模式" />
+
+</RelativeLayout>

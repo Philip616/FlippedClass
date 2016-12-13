@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEEDD" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_course"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:text="下次上課時間 : " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:textSize="15sp"
+        android:text="提前提醒  : " />
+
+    <TextView
+        android:id="@+id/remind_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/remind_time"
+        android:layout_alignBottom="@+id/remind_time"
+        android:layout_alignRight="@+id/updata_course"
+        android:text="天前"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/end_time"
+        android:layout_alignBottom="@+id/end_time"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="課程結束時間 : "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_below="@+id/start_time"
+        android:layout_marginTop="34dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/end_time"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/delete_course"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/updata_course"
+        android:layout_alignBottom="@+id/updata_course"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/half_spacew_btn"
+        android:text="刪除課程" />
+
+    <Button
+        android:id="@+id/new_course"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/half_spacew_btn"
+        android:text="新建課程 " />
+
+    <Button
+        android:id="@+id/updata_course"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_course"
+        android:layout_alignBottom="@+id/new_course"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/half_spacew_btn"
+        android:text="修改課程" />
+
+</RelativeLayout>

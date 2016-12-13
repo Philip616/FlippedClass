@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/tch_team_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/share_group_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="分享組別" />
+
+    <Button
+        android:id="@+id/close_discuss_share"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="關閉分享" />
+
+    <ListView
+        android:id="@+id/tch_team_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_group_discuss"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tch_team_spinner" >
+
+    </ListView>
+    
+    <ProgressBar
+        android:id="@+id/tch_team_pgb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

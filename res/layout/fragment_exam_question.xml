@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  	<TextView 
+  	    android:id="@+id/txt_exam_name"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:textSize = "24sp"
+  	    />
+  	
+  	<TextView
+  	    android:id="@+id/txt_ques_code"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="28dp"
+  	    android:layout_alignRight="@+id/list_questionlist"
+  	    android:layout_below="@id/txt_exam_name"
+  	    android:background="@drawable/exam_ques_code_fram"
+  	    android:text="題號"
+  	    android:textSize="20sp" />
+  	
+  	<ListView
+        android:id="@+id/list_questionlist"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_ques_code"/>
+    
+    <Button 
+        android:id="@+id/btn_send_ans"
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="傳送答案"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    
+    <TextView
+  	    android:id="@+id/txt_show_ans"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="28dp"
+  	    android:layout_alignParentBottom="true"
+		android:layout_toRightOf="@+id/list_questionlist"/>
+
+    <FrameLayout
+        android:id="@+id/fram_exam_ques_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_send_ans"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_exam_name"
+        android:layout_toRightOf="@+id/list_questionlist" >
+		<RelativeLayout 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical" >
+
+	        <ProgressBar
+	            android:id="@+id/pgb_exam_ques"
+	            style="?android:attr/progressBarStyleLarge"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

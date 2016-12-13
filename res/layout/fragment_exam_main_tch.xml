@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEDD" >
+    
+    <ListView
+		android:id="@+id/list_exam_main_tchlist"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="48dp"/>
+    
+    <Button
+        android:id="@+id/btn_exam_create"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="新建測驗" />
+    
+    <ProgressBar
+        android:id="@+id/pgb_exam_tchmain"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

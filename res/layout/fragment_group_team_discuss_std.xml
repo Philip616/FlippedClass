@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Spinner
+        android:id="@+id/std_team_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    
+    <ProgressBar
+        android:id="@+id/std_team_pgb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/ask_share_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="請求分享" />
+
+    <Button
+        android:id="@+id/std_create_discuss_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="新增討論" />
+
+    <ListView
+        android:id="@+id/std_team_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/std_team_spinner" >
+
+    </ListView>
+
+</RelativeLayout>

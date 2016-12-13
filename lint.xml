@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/mcucsie/flippedclass/DataFromDatabase.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamCreateExamFragment.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamFragment.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamGradeBarChartFragment.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamGradeTeacherFragment.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamMainStudentFragment.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamMainTeacherFragment.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamStudentBaseAdapter.java" />
+        <ignore path="src/com/mcucsie/flippedclass/exam/ExamTeacherBaseAdapter.java" />
+        <ignore path="src/com/mcucsie/flippedclass/group/ModifyModePopupWindow.java" />
+        <ignore path="src/com/mcucsie/flippedclass/group/PersonInfoPopupWindow.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+</lint>

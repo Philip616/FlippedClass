@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+       
+    <Spinner
+        android:id="@+id/spinner_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+    <GridView
+        android:id="@+id/gv_exam_gradetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_exam"
+        android:layout_centerHorizontal="true"
+        android:numColumns="2" >
+    </GridView>
+    <GridView
+        android:id="@+id/gv_exam_gradeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numColumns="2" 
+        android:layout_marginBottom="48dp"
+    	android:layout_below="@id/gv_exam_gradetitle">
+    </GridView>
+    
+    <Button 
+        android:id="@+id/btn_exam_tobarchart"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/half_space_btn"
+       	android:textColor="#FFFFFF"
+        android:text="成績分布情況"
+        />
+    
+    <ProgressBar
+        android:id="@+id/pgb_exam_tchgrade"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attendance_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEEDD" > 
+        
+     	<Button
+     	    android:id="@+id/btn_attendance"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_centerHorizontal="true"
+     	    android:text="運用GCM發送訊息給所有使用者" />
+
+     	<Button
+     	    android:id="@+id/btn_attend_2"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_below="@+id/btn_attendance"
+     	    android:layout_centerHorizontal="true"
+     	    android:layout_marginTop="60dp"
+     	    android:text="運用GCM模擬點名的訊息推播" />
+    
+     
+     	<TextView  
+        android:layout_height="wrap_content" 
+	    android:layout_width="wrap_content" 
+	    android:id="@+id/tv_attend" 
+	    android:text="Attend Fragment" 
+	    android:layout_marginTop="16dp" 
+	    android:layout_centerHorizontal="true" 
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:layout_alignParentTop="true"/>
+
+      <FrameLayout
+          android:id="@+id/frame_attend_content"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/tv_attend"
+          android:layout_margin="8dp"
+          android:layout_marginBottom="0dp"
+          android:layout_marginLeft="0dp"
+          android:layout_marginRight="0dp"
+          android:layout_marginTop="0dp"
+          android:padding="8dp" />
+
+</RelativeLayout>

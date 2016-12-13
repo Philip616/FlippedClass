@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/txt_tch_exam_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="8dip"
+	    android:layout_marginTop="8dip"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<TextView
+	    android:id="@+id/txt_tch_exam_state"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/txt_tch_exam_name"
+	    android:layout_below="@id/txt_tch_exam_name"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/btn_tch_edit_exam"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:background="@drawable/rewrite"
+	    android:layout_alignTop="@+id/txt_tch_exam_name"
+	    android:layout_toLeftOf="@+id/btn_tch_open_exam"
+	    android:focusable="false" />
+
+	<Button
+	    android:id="@+id/btn_tch_open_exam"
+	    android:layout_width="80dp"
+	    android:layout_height="40dp"
+	    android:background="@drawable/half_spacew_btn"
+       	android:textColor="#6dc2c7"
+	    android:layout_alignBottom="@+id/btn_tch_edit_exam"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/btn_tch_edit_exam"
+	    android:focusable="false" />
+
+</RelativeLayout>

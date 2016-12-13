@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.slidebartest.MainActivity" 
+    xmlns:v7="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/item_logout"
+        android:orderInCategory="1"  
+        android:icon="@+drawable/icon_home"  
+        android:title="@string/str_item_logout"/>
+   
+    <item
+        android:id="@+id/item_change_pw"
+        android:orderInCategory="2"      
+        android:title="@string/str_item_ChangePw"/>
+              
+    <item
+        android:id="@+id/item_showinfo"
+        android:orderInCategory="3"      
+        android:visible="false"
+        android:title="@string/str_item_showinfo"/>
+    
+    <item android:id="@+id/action_choosecourse"
+          android:icon="@drawable/ic_choosecourse"
+          android:title="@string/str_action_choosecourse"
+          v7:showAsAction="always" />
+    <item 
+        android:id="@+id/action_edit_info"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/str_action_edit_info"
+        v7:showAsAction="always" />
+
+</menu>

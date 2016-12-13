@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEDD" >
+    
+<ListView
+		android:id="@+id/list_exam_database"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="48dp"/>
+
+<Button
+    android:id="@+id/btn_set_grade"
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/btn_reset_choose"
+    android:background="@drawable/half_space_btn"
+    android:text="設定分數" />
+
+<Button
+    android:id="@+id/btn_reset_choose"
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/half_space_btn"
+    android:text="重新選題" />
+
+</RelativeLayout>

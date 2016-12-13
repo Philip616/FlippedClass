@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_newpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請輸入新密碼"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/ed_newpw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_again_newpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認新密碼"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/ed_again_newpw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:inputType="textPassword" />
+
+</LinearLayout>

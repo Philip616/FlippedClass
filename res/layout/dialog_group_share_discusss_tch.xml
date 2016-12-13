@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/share_groupNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/openGroup"
+        android:layout_toRightOf="@+id/openGroup"
+        android:ems="3"
+        android:maxLength="2"
+        android:gravity="center" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/share_groupNum"
+        android:layout_alignBottom="@+id/share_groupNum"
+        android:layout_toRightOf="@+id/share_groupNum"
+        android:text="組"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/openGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RadioButton
+            android:id="@+id/share_this_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享當前組別"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/share_other_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享當前組別給第"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+</RelativeLayout>
